@@ -1,0 +1,43 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo -e "Requesting Access to Storage\n"
+termux-setup-storage
+sleep 5
+
+echo -e "Upgrading Packages"
+apt update && apt upgrade -y
+
+echo -e "Installing FFmpeg\n"
+pkg install -y ffmpeg
+
+echo -e "Installing Python\n"
+pkg install -y python
+
+echo -e "Updating Python\n"
+python -m pip install --upgrade pip
+
+echo -e "Installing YT-DLP\n"
+yes | python3 -m pip install -U yt-dlp
+
+echo -e "Creating YT-DLP Folder For Config\n"
+mkdir -p ~/yt-dlp/config
+
+echo -e "Creating YT-DLP Bin Folder\n"
+mkdir ~/bin
+
+echo -e "Installing Termux-URL-Opener\n"
+curl https://pastebin.com/raw/9nSpwk1q -o ~/bin/termux-url-opener
+dos2unix ~/bin/termux-url-opener
+
+clear
+
+echo -e "
+
+ YouTube-DLP is now Installed.
+
+ YouTube-DLP Support's 100's of Video Streaming Sites.
+
+ Share to Termux from Android Share Menu 
+ to Save Video or Audio to Downloads\Media.
+
+ Type Exit to Leave Termux.\n"
