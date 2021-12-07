@@ -53,3 +53,4 @@ https://www.reddit.com/r/youtubedl
 
 There are no feature updates planned for this script but bug fixes will be attempted.
 
+The installation can be updated by copy-pasteing the code in to Termux again and executing said code.
