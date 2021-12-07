@@ -40,4 +40,4 @@ echo -e "
  Share to Termux from Android Share Menu 
  to Save Video or Audio to Downloads\Media.
 
- Type Exit to Leave Termux.\n"
+ Type Exit & Hit Enter to Leave Termux.\n"
