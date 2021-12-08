@@ -48,4 +48,4 @@ then
     yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -f140 -x $1
     yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1
 	
-Fi
+fi
