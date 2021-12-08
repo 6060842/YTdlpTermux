@@ -35,7 +35,7 @@ https://github.com/ytdl-org/youtube-dl
 
 The code required to run this script is:
 
-pkg install curl && curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-01?token=AW2JPZCKOIHBLAV6EEXGLPDBV7NTI -o install.sh && dos2unix install.sh && chmod u+x install.sh && ./install.sh
+pkg install curl && curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-01 -o install.sh && dos2unix install.sh && chmod u+x install.sh && ./install.sh
 
 This should be copy-pasted in to Termux and the enter button pressed to start the installation.
 
