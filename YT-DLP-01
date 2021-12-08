@@ -23,7 +23,7 @@ echo -e "Creating YT-DLP Bin Folder\n"
 mkdir ~/bin
 
 echo -e "Installing Termux-URL-Opener\n"
-curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-02?token=AW2JPZGXNY7N4MJQNUNZSJLBV7NNK -o ~/bin/termux-url-opener
+curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-02 -o ~/bin/termux-url-opener
 dos2unix ~/bin/termux-url-opener
 
 clear
