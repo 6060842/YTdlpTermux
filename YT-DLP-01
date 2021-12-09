@@ -14,7 +14,7 @@ echo -e "Installing Python\n"
 pkg install -y python
 
 echo -e "Updating Python\n"
-python -m pip install --upgrade pip
+python -m pip install --upgrade pip setuptools wheel
 
 echo -e "Installing YT-DLP\n"
 yes | python3 -m pip install -U yt-dlp
