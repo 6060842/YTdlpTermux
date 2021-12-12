@@ -8,9 +8,9 @@ The goal is achieved by using a combination of the Android share menu, Termux, a
 Termux combines powerful terminal emulation with an extensive Linux package
 collection.
 
-yt-dlp is a youtube-dl fork based on the now inactive youtube-dl.
+Yt-dlp is a youtube-dl fork based on the now inactive youtube-dl.
 
-yt-dlp downloads videos or audio from youtube.com or other video platforms.
+Yt-dlp downloads videos or audio from youtube.com or other video platforms.
 
 
 Once the prerequisite of the Termux app has been installed all that is required is to copy-paste one piece of scripted code in to Termux and hit enter.
@@ -19,7 +19,7 @@ The Termux APK can be obtained from F-Droid at:
 
 https://f-droid.org/en/packages/com.termux/
 
-You don't need to install F-Droid just download the latest Termux APK.
+You don't need to install F-Droid just download the latest Termux APK and install it. You may have to allow your browser the Install Unknown Apps permision to install Termux.
 
 The Google Play Store version of Termux is now depreciated and is no longer supported.
 
