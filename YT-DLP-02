@@ -1,13 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
  
 echo " "
-echo " "
-echo " "
 echo " YT-DLP is Ready to download"
 echo " "
-echo " For information about this script visit"
-echo " github.com/6060842"
-echo " "
+echo " For more info visit github.com/6060842"
 echo " "
 echo " Audio files are saved in Downloads/Media/Audio"
 echo " Video files are saved in Downloads/Media/Video"
