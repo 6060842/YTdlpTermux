@@ -69,8 +69,8 @@ clear
 
 echo " "
 echo -e "
- ${RED} DeeMix is now installed.${RESET}
- ${RED} Downloaded files are stored in Downloads/Media/Audio/Deezer.${RESET}
+ ${RED} DeeMix is now installed.Downloaded files 
+ are stored in Downloads/Media/Audio/Deezer.${RESET}
 
  ${WHITE} For FLAC Paste: deemix -b flac [URL]${RESET}
  ${WHITE} For MP3 Paste: deemix -b mp3 [URL]${RESET}
