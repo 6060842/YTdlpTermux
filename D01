@@ -1,0 +1,79 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+RED='\e[0;31m'
+WHITE='\e[0;37m'
+BLUE='\e[0;34m'
+YELLOW='\e[0;33m'
+GREEN='\e[32m'
+PURPLE='\e[1;95m'
+RESET='\e[0m'
+
+clear
+
+echo -e " "
+echo -e "
+${GREEN} Installing DeeMix Deezer Downloader.  
+ This downloader requires a valid Deezer ARL.
+
+ When asked for any user conformation during the installation, 
+ type Y and press ENTER.\n"
+
+read -p " Press ENTER to continue:-"
+clear
+
+echo " "
+echo -e "${GREEN}Upgrading Packages:-${RESET}"
+echo " "
+apt update --assume-yes && apt upgrade --assume-yes
+
+echo " "
+echo -e "${GREEN}Installing Python:-${RESET}\n"
+pkg install -y python
+
+echo " "
+echo -e "${GREEN}Updating Python:-${RESET}\n"
+python -m pip install --upgrade pip setuptools wheel
+
+echo " "
+echo -e "${GREEN}Installing DeeMix:-${RESET}\n"
+yes | python3 -m pip install deemix
+
+echo " "
+echo -e "${GREEN}Requesting User ARL, Paste then press ENTER:-${RESET}\n"
+deemix requestValidArl
+
+echo " "
+echo -e "${GREEN}Installing DeeMix Config:-${RESET}\n"
+curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/D02 -o ~/config/config.json
+dos2unix ~/bin/termux-url-opener
+
+clear
+
+echo -e "${GREEN} Select allow on the next prompt for 
+ storage access permission.\n"
+read -p " Press ENTER to continue:-"
+clear
+termux-setup-storage
+sleep 5
+
+clear
+
+echo " "
+echo -e "${GREEN} Select Termux for draw over apps permission 
+ on the next prompt & allow the permission.
+ Then press back to return to Termux\n"
+read -p " Press ENTER to continue:-"
+`am start --user 0 -a android.settings.action.MANAGE_OVERLAY_PERMISSION -d "package:com.termux"`
+
+clear
+
+echo " "
+echo -e "
+ ${RED} DeeMix is now installed.${RESET}
+ ${RED} Downloaded files are stored in Downloads/Media/Audio/Deezer.${RESET}
+
+ ${WHITE} For FLAC Paste: deemix -b flac [URL]${RESET}
+ ${WHITE} For MP3 Paste: deemix -b mp3 [URL]${RESET}
+
+ ${BLUE} For more info visit github.com/6060842${RESET}
+ ${BLUE} Type EXIT and press ENTER to leave Termux:-\n"
