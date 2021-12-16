@@ -15,8 +15,8 @@ echo -e "
 ${GREEN} Installing DeeMix Deezer Downloader.  
  This downloader requires a valid Deezer ARL.
 
- When asked for any user conformation during the installation, 
- type Y and press ENTER.\n"
+ When asked for any user conformation during 
+ the installation, type Y and press ENTER.\n"
 
 read -p " Press ENTER to continue:-"
 clear
