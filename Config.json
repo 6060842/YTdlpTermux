@@ -1,5 +1,5 @@
 {
-  "downloadLocation": "/storage/emulated/0/Download/Media/Audio/Deezer/",
+  "downloadLocation": "/storage/emulated/0/Download/Media/Audio/Deezer/"
   "tracknameTemplate": "%artist% - %title%",
   "albumTracknameTemplate": "%tracknumber% - %title%",
   "playlistTracknameTemplate": "%position% - %artist% - %title%",
