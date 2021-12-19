@@ -69,7 +69,7 @@ deemix requestValidArl
 
 echo " "
 echo -e "${GREEN}Installing DeeMix Config:-${RESET}\n"
-curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/D02 -o ~/config/config.json
+curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/Config.json -o ~/config/config.json
 dos2unix ~/bin/termux-url-opener
 
 echo " "
