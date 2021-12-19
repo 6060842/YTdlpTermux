@@ -22,13 +22,6 @@ echo -e "
  
 read -p " Press ENTER to continue:-"
 clear
-echo " "
-echo " "
-echo -e "${GREEN} Select allow on the next prompt for 
- storage access permission.\n"
-read -p " Press ENTER to continue:-"
-clear
-termux-setup-storage
  
 echo " "
 echo -e "${GREEN}Upgrading Packages:-${RESET}"
@@ -61,7 +54,16 @@ curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-02 -o ~/b
 dos2unix ~/bin/termux-url-opener
  
 clear
- 
+
+echo -e "${GREEN} Select allow on the next prompt for 
+ storage access permission.\n"
+read -p " Press ENTER to continue:-"
+clear
+termux-setup-storage
+sleep 5
+
+clear
+
 echo " "
 echo -e "${GREEN} Select Termux for draw over apps permission 
  on the next prompt & allow the permission.
