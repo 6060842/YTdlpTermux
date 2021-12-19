@@ -54,7 +54,7 @@ mkdir ~/bin
  
 echo " "
 echo -e "${GREEN}Installing Termux-URL-Opener:-${RESET}\n"
-curl https://pastebin.com/raw/9Lz8WtYp -o ~/bin/termux-url-opener
+curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-02 -o ~/bin/termux-url-opener
 dos2unix ~/bin/termux-url-opener
 
 echo " "
@@ -69,7 +69,7 @@ deemix requestValidArl
 
 echo " "
 echo -e "${GREEN}Installing DeeMix Config:-${RESET}\n"
-curl https://pastebin.com/raw/enEd7w6S -o ~/config/config.json
+curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/D02 -o ~/config/config.json
 dos2unix ~/bin/termux-url-opener
 
 echo " "
