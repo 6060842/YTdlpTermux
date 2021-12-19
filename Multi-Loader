@@ -109,6 +109,7 @@ echo -e "
  
  For FLAC Paste: deemix -b flac [URL]
  For MP3 Paste: deemix -b mp3 [URL]
+ in to Termux then press ENTER.
  
  For more info visit github.com/6060842
  Type EXIT and press ENTER to leave Termux${RESET}:-\n"
