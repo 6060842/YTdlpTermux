@@ -52,6 +52,10 @@ echo " "
 echo -e "${GREEN}Installing Termux-URL-Opener:-${RESET}\n"
 curl https://raw.githubusercontent.com/6060842/YTdlpTermux/main/YT-DLP-02 -o ~/bin/termux-url-opener
 dos2unix ~/bin/termux-url-opener
+
+echo " "
+echo -e "${GREEN}Installing Termux API:-${RESET}\n"
+pkg install termux-api
  
 clear
 
