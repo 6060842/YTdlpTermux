@@ -9,39 +9,46 @@ echo " Audio files are saved in Downloads/Media/Audio"
 echo " Video files are saved in Downloads/Media/Video"
 echo " "
 echo " "
-echo " For MP3 Audio press 1"
-echo " For M4A Audio press 2"
-echo " For MP4 Video press 3"
-echo " For MP3 & MP4 press 4"
-echo " For M4A & MP4 press 5"
+echo " For MP3 Audio press 1 then ENTER"
+echo " For M4A Audio press 2 then ENTER"
+echo " For MP4 Video press 3 then ENTER"
+echo " For MP3 & MP4 press 4 then ENTER"
+echo " For M4A & MP4 press 5 then ENTER"
 echo " "
 read option
+
+url=$1
 
 if [ "$option" -eq "1" ]
 then
     clear
-    yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 192K --prefer-ffmpeg $1
+    yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 192K --prefer-ffmpeg $1 $url
+termux-notification --title "YouTube-DLP" --content "Download Complete: $url"
 
 elif [ "$option" -eq "2" ]
 then
     clear
-    yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -f140 -x $1
+    yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -f140 -x $1 $url
+termux-notification --title "YouTube-DLP" --content "Download Complete: $url"
 
 elif [ "$option" -eq "3" ]
 then
     clear
-    yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1
+    yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1 $url
+termux-notification --title "YouTube-DLP" --content "Download Complete: $url"
 	
 elif [ "$option" -eq "4" ]
 then
     clear
     yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 192K --prefer-ffmpeg $1
-    yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1
+    yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1 $url
+termux-notification --title "YouTube-DLP" --content "Download Complete: $url"
 		
 elif [ "$option" -eq "5" ]
 then
     clear
     yt-dlp --no-mtime -o "~/storage/downloads/Media/Audio/%(title)s.%(ext)s" -f140 -x $1
-    yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1
+    yt-dlp --no-mtime -o "~/storage/downloads/Media/Video/%(title)s.%(ext)s" -f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b' $1 $url
+termux-notification --title "YouTube-DLP" --content "Download Complete: $url"
 	
 fi
