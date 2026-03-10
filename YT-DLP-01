@@ -42,7 +42,7 @@ python -m pip install --upgrade pip setuptools wheel
  
 echo " "
 echo -e "${GREEN}Installing YouTube-DLP:-${RESET}\n"
-yes | python3 -m pip install -U yt-dlp --pre
+yes | python3 -m pip install -U --pre yt-dlp
  
 echo " "
 echo -e "${GREEN}Creating YT-DLP bin folder:-${RESET}\n"
